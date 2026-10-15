@@ -57,12 +57,19 @@ The program exits with code `0` if the erase succeeds and every byte reads back 
 ## Output
 
 ```
-[CB] progress  25% (16/64 pages, t=80 ms)
-[CB] progress  50% (32/64 pages, t=160 ms)
-[CB] progress  75% (48/64 pages, t=240 ms)
-[CB] ERASE COMPLETE: 64/64 pages at t=320 ms
-NvM_EraseAll returned 0, total time = 320 ms, non-0xFF bytes = 0
-Page 63 check: eeprom[504..511] = FF FF ... FF
+Input: abcdefghijklmnopqrstuvwxyz
+
+After Erasing specific page: abcdefgh▒▒▒▒▒▒▒▒qrstuvwxyz
+
+Erasing Entire EEPROM Memory
+
+Erase Started
+Erase In Progress
+Erase Done
+Entire Erasing time of all the 64 pages : 320ms
+
+After Erasing Entire pages: ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
 ```
 
 ## Result
