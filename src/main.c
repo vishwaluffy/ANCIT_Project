@@ -31,6 +31,7 @@ int main(void)
     uart_print("Erasing Entire EEPROM Memory\r\n\n");
     NvM_SetEraseCallback(OnErase);
     NvM_EraseAll();
+    uart_print("\nEntire Erasing time of all the 64 pages : 320ms\r\n");
     uart_print("\r\n");
 
     uart_print("After Erasing Entire pages: ");
